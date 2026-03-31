@@ -5,7 +5,7 @@
 
 # Create a low-privilege user
 useradd -m -s /bin/bash labuser
-useradd -m -s /bin/bash ubuntu
+# useradd -m -s /bin/bash ubuntu
 echo "labuser:labpassword" | chpasswd
 echo "ubuntu:ubuntu" | chpasswd
 
