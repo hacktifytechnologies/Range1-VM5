@@ -6,6 +6,7 @@
 # Create a low-privilege user
 useradd -m -s /bin/bash ctfuser
 echo "labuser:labpassword" | chpasswd
+echo "ubuntu:ubuntu" | chpasswd
 
 # Set SUID bit on 'find' binary
 chmod u+s /usr/bin/find
