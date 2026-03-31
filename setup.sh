@@ -3,7 +3,7 @@
 # Setup - Technique 1: SUID Binary Abuse
 # ============================================================
 
-# Create a low-privilege CTF user
+# Create a low-privilege user
 useradd -m -s /bin/bash ctfuser
 echo "labuser:labpassword" | chpasswd
 
