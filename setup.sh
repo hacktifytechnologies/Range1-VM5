@@ -1,0 +1,15 @@
+#!/bin/bash
+# ============================================================
+# Setup - Technique 1: SUID Binary Abuse
+# ============================================================
+
+# Create a low-privilege CTF user
+useradd -m -s /bin/bash ctfuser
+echo "labuser:labpassword" | chpasswd
+
+# Set SUID bit on 'find' binary
+chmod u+s /usr/bin/find
+
+echo "[+] SUID challenge is ready."
+echo "[+] Login as: labuser:labpassword"
+echo "[+] Find the SUID binary and escalate!"
